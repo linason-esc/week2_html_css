@@ -1,0 +1,93 @@
+html, body {
+  height : 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header {
+  height : 50px;
+  border : 5px solid pink;
+  text-align: center;
+}
+
+.topbar{
+  font-size: 25px;
+  color : black;
+  position : relative;
+  top : 8px;
+}
+
+main {
+  margin-top: 10px;
+  display : flex;
+  flex: row;
+  flex-wrap: nowrap;
+  height : 90.5%;
+}
+
+.sidebar {
+  font-size: 25px;
+  border-radius: 5px;
+  border: 5px solid lightskyblue;
+  width : 120px;
+  flex-shrink: 0;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+}
+
+li {
+  padding-bottom: 7px;
+  position :relative;
+  bottom : 20px;
+  right : 30px;
+  color : lightskyblue;
+}
+
+.juryubox {
+  position : relative;
+  width : 92%;
+  
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  align-content: flex-start;
+
+  border : 5px solid plum;
+  margin-left : 10px;
+  overflow-y: scroll;
+}
+
+.box {
+  display : flex;
+  flex-direction: column;
+  width : 200px;
+  height : 200px;
+  padding : 10px;
+  margin : 10px;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+}
+
+.box > img {
+  width : 100%;
+  height : 200px;
+}
+
+.box > span {
+  text-align: center;
+}
+
+@media (max-width: 950px){
+  .box{
+      background-color : wheat;
+  }
+}
+
+@media (max-width: 650px){
+  .box{
+      background-color : burlywood;
+  }
+}
